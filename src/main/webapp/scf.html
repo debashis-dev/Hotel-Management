@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrollable Form</title>
+<style>
+    /* CSS for scrollable form */
+    .form-container {
+        width: 300px; /* Adjust width as needed */
+        height: 400px; /* Specify fixed height */
+        overflow-y: auto; /* Enable vertical scrolling */
+        border: 1px solid #ccc; /* Add border for visibility */
+        padding: 20px; /* Add padding */
+        display: flex; /* Use flexbox layout */
+        justify-content: center; /* Center the form horizontally */
+        align-items: center; /* Center the form vertically */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+    .form-container form {
+        text-align: center; /* Center form inputs */
+        width: 100%; /* Ensure the form takes full width of the container */
+    }
+    .form-container form label {
+        display: block; /* Make labels display as block elements */
+        margin-bottom: 10px; /* Add space between labels */
+    }
+    .form-container form input,
+    .form-container form textarea {
+        width: calc(100% - 20px); /* Set input width to 100% minus padding */
+        margin-bottom: 15px; /* Add space between inputs */
+        padding: 5px; /* Add padding */
+    }
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center;">Login Form</h2>
+
+<div class="form-container">
+    <form>
+        <!-- Your form fields here -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<!-- Example content below the form to illustrate scrolling -->
+<div style="height: 1500px; background-color: #f0f0f0;">
+    <!-- This content is below the form and will not be affected by the form's scrolling -->
+</div>
+
+</body>
+</html>

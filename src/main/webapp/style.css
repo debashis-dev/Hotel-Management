@@ -1,0 +1,59 @@
+
+.bodyclass {
+	margin: 0;
+	padding: 0;
+	height: 100vh;	/* This ensures the gradient covers the entire viewport height */
+	background: linear-gradient(to bottom, Aquamarine, Crimson);	/* Gradient from red to blue */
+}
+
+.container {
+	max-width: 500px;
+	margin: 50px auto;
+	background: linear-gradient(to bottom, LemonChiffon, LightCyan);
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	color: #333;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.form-label {
+	font-weight: bold;
+}
+
+.btn-primary {
+	background-color: #007bff;
+	border-color: #007bff;
+	width: 100%;
+}
+
+.btn-primary:hover {
+	background-color: #0056b3;
+	border-color: #0056b3;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-control {
+	border-color: #ccc;
+}
+
+.already-registered {
+	text-align: center;
+	margin-top: 20px; /* Adjust margin as needed */
+}
+
+.already-registered a {
+	color: #007bff; /* Link color */
+	text-decoration: none; /* Remove default underline */
+}
+
+.already-registered a:hover {
+	text-decoration: underline; /* Add underline on hover */
+}
